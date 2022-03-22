@@ -1,0 +1,106 @@
+header {
+    background-image: url("imagenes/laboratorio\ header\ 1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 22vh;
+}
+
+#logo {
+    max-height: 20vh; 
+    min-height: 13vh;
+    animation-name: giroLogo;
+    animation-iteration-count: infinite;
+    animation-delay: 7s;
+    animation-timing-function: ease-in-out;
+    animation-duration: 8s;
+}
+
+@keyframes giroLogo {
+    10%{
+        transform: rotate3d(1,1,1,90deg);
+    }
+
+    90%{
+        transform: rotate3d(1,1,1,360deg);
+    }
+}
+
+//Grupo de iconos de redes sociales, mapa, contacto y presupuestos
+
+.grupoIconosHeader {
+    height: 3.5vh;
+    width: 2.5vw;
+
+    &:hover {
+        animation: latido 1s ease-in-out none infinite;
+    }
+
+    @keyframes latido {
+        0%
+        {
+          transform: scale( 1 );    
+        }
+        20%
+        {
+          transform: scale( 1.25 );  
+        }
+         40%
+        {
+          transform: scale( 1.5 );
+        }
+    }
+}
+
+//Altura del header
+
+.altura {
+    height: 22vh;
+}
+
+//Altura de los contenedores del logo y el grupo de iconos
+
+.alturaCol{
+    height: 20vh;
+}
+
+//Altura de los iconos de redes sociales, mapa, contacto y presupuestos
+
+.alturaRedes {
+    height: 20vh;
+}
+
+//Cambios responsive
+
+@media only screen and (max-width: 991px) {
+    
+    //Grupo de iconos de redes sociales, mapa, contacto y presupuestos
+
+    .grupoIconosHeader {
+        transform: scale(1.25);
+    }
+
+//Altura de los contenedores del logo y el grupo de iconos
+
+    .alturaCol {
+        height: 15vh;
+    }
+
+//Color de la barra de iconos de redes sociales, mapa, contacto y presupuestos
+    
+    .barraRedes {
+        background-color: map-get($map: $colores, $key: color3);
+    }
+
+//Altura de los iconos de redes sociales, mapa, contacto y presupuestos
+
+    .alturaRedes {
+        height: 7vh;
+    }
+
+//Contenedor del logo
+
+    .contenedorLogo {
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,42 @@
+@import "_colores";
+
+//Estilo
+
+//Barra de navegación
+
+nav {
+    background-color: map-get($map: $colores, $key: color1);
+    text-align: center;
+
+    //Lista desordenada
+
+    #barraNavegaciónSuperior {
+        display: flex;
+        justify-content: center;
+
+        //link de los elementos de la lista
+
+        a {
+            text-decoration: none;
+
+            //elementos de la lista
+
+            .itemsNav1 {
+                margin: 5px;
+                padding: 5px;
+                width: 110px;
+                text-transform: uppercase;
+                list-style: none;
+                text-decoration: none;
+                border-radius: 10px;
+                text-align: center;
+
+                &:hover {
+                    background-color: map-get($map: $colores, $key: color2);
+                    color: white;
+                    transition: 1.2s;
+                }
+            }
+        }
+    }
+}

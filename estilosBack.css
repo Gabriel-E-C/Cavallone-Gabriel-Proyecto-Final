@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-image: url("imagenes/laboratorio\ header\ 1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 22vh;
+}
+
+#logo {
+    height: 15vh;
+    width: 10vw;
+}
+
+.grupoIconosHeader {
+    height: 3.5vh;
+    width: 2.5vw;
+}
+
+.altura {
+    height: 22vh;
+}
+
+.alturaCol{
+    height: 15vh;
+}

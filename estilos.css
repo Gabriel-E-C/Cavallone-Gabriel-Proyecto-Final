@@ -1,0 +1,163 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+header {
+  background-image: url("imagenes/laboratorio header 1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 22vh;
+}
+
+#logo {
+  max-height: 20vh;
+  min-height: 13vh;
+  -webkit-animation-name: giroLogo;
+          animation-name: giroLogo;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+}
+
+@-webkit-keyframes giroLogo {
+  10% {
+    -webkit-transform: rotate3d(1, 1, 1, 90deg);
+            transform: rotate3d(1, 1, 1, 90deg);
+  }
+  90% {
+    -webkit-transform: rotate3d(1, 1, 1, 360deg);
+            transform: rotate3d(1, 1, 1, 360deg);
+  }
+}
+
+@keyframes giroLogo {
+  10% {
+    -webkit-transform: rotate3d(1, 1, 1, 90deg);
+            transform: rotate3d(1, 1, 1, 90deg);
+  }
+  90% {
+    -webkit-transform: rotate3d(1, 1, 1, 360deg);
+            transform: rotate3d(1, 1, 1, 360deg);
+  }
+}
+
+.grupoIconosHeader {
+  height: 3.5vh;
+  width: 2.5vw;
+}
+
+.grupoIconosHeader:hover {
+  -webkit-animation: latido 1s ease-in-out none infinite;
+          animation: latido 1s ease-in-out none infinite;
+}
+
+@-webkit-keyframes latido {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  20% {
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+  }
+  40% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
+@keyframes latido {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  20% {
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+  }
+  40% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
+.altura {
+  height: 22vh;
+}
+
+.alturaCol {
+  height: 20vh;
+}
+
+.alturaRedes {
+  height: 20vh;
+}
+
+@media only screen and (max-width: 991px) {
+  .grupoIconosHeader {
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+  }
+  .alturaCol {
+    height: 15vh;
+  }
+  .barraRedes {
+    background-color: rgba(26, 26, 250, 0.8);
+  }
+  .alturaRedes {
+    height: 7vh;
+  }
+  .contenedorLogo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+nav {
+  background-color: aquamarine;
+  text-align: center;
+}
+
+nav #barraNavegaciónSuperior {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav #barraNavegaciónSuperior a {
+  text-decoration: none;
+}
+
+nav #barraNavegaciónSuperior a .itemsNav1 {
+  margin: 5px;
+  padding: 5px;
+  width: 110px;
+  text-transform: uppercase;
+  list-style: none;
+  text-decoration: none;
+  border-radius: 10px;
+  text-align: center;
+}
+
+nav #barraNavegaciónSuperior a .itemsNav1:hover {
+  background-color: #03adad;
+  color: white;
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/*# sourceMappingURL=estilos.css.map */
