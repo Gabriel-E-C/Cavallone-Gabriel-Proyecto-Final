@@ -1,5 +1,12 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+body {
+  background-image: url("imagenes/lab fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 header {
   background-image: url("imagenes/laboratorio header 1.jpg");
   background-size: cover;
@@ -154,6 +161,30 @@ nav #barraNavegaciónSuperior a .itemsNav1:hover {
   color: white;
   -webkit-transition: 1.2s;
   transition: 1.2s;
+}
+
+.alturaMain {
+  height: 50vh;
+}
+
+.mainLinks {
+  height: 200px;
+  width: 200px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.mainLinks:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+@media only screen and (max-width: 991px) {
+  .alturaMain {
+    height: 60vh;
+  }
 }
 
 * {

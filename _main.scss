@@ -1,0 +1,21 @@
+
+.alturaMain{
+    height: 50vh;
+}
+
+.mainLinks {
+    height: 200px;
+    width: 200px;
+    transition: 1s;
+    
+    &:hover{
+        transform: scale(1.1);
+        transition: 1s;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .alturaMain {
+        height: 60vh;
+    }
+}
