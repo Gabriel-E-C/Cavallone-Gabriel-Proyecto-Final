@@ -1,0 +1,34 @@
+@import "_colores";
+
+footer {
+    background-color: map-get($map: $colores, $key: color4 );
+    min-height: 500px;
+
+    .itemFooter {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    
+        h2 {
+            align-self: center;
+            margin-bottom: 10px;
+        }
+
+        p {
+            background-color: map-get($map: $colores, $key:color5 );
+        }
+    }
+
+    #tablaH { 
+        .tabla {
+            background-color: map-get($map: $colores, $key:color5 );
+        }
+    }
+}
+
+@media only screen and (max-width: 930px) {
+
+    #mapaGoogle {
+        width: 100%;
+    }
+}

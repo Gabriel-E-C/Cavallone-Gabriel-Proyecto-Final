@@ -1,12 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
-body {
-  background-image: url("imagenes/lab fondo.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
 header {
   background-image: url("imagenes/laboratorio header 1.jpg");
   background-size: cover;
@@ -130,6 +123,7 @@ header {
 nav {
   background-color: aquamarine;
   text-align: center;
+  height: 6.3vh;
 }
 
 nav #barraNavegaciónSuperior {
@@ -139,6 +133,9 @@ nav #barraNavegaciónSuperior {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 nav #barraNavegaciónSuperior a {
@@ -163,27 +160,112 @@ nav #barraNavegaciónSuperior a .itemsNav1:hover {
   transition: 1.2s;
 }
 
-.alturaMain {
-  height: 50vh;
+@media only screen and (max-width: 991px) {
+  nav {
+    height: 7vh;
+  }
+}
+
+main {
+  background-image: url("imagenes/lab fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: #444;
+  background-blend-mode: multiply;
 }
 
 .mainLinks {
   height: 200px;
   width: 200px;
-  -webkit-transition: 1s;
-  transition: 1s;
+  border: outset 4px aquamarine;
 }
 
-.mainLinks:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: 1s;
-  transition: 1s;
+.alturaMain {
+  height: 50vh;
+}
+
+.overlay {
+  position: relative;
+  background-color: pink;
+}
+
+.contenido {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding-left: 1.2rem;
+  font-family: 'Dancing Script', cursive;
+  background-color: rgba(26, 26, 250, 0.8);
+  color: transparent;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: .5s;
+  transition: .5s;
+  z-index: 1;
+}
+
+.overlay:hover .contenido {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  color: white;
+  z-index: 0;
+}
+
+.tituloContenido {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.textoContenido {
+  font-size: 1.2rem;
 }
 
 @media only screen and (max-width: 991px) {
   .alturaMain {
-    height: 60vh;
+    height: 70vh;
+  }
+}
+
+footer {
+  background-color: #104745;
+  min-height: 500px;
+}
+
+footer .itemFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+}
+
+footer .itemFooter h2 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 10px;
+}
+
+footer .itemFooter p {
+  background-color: #19716d;
+}
+
+footer #tablaH .tabla {
+  background-color: #19716d;
+}
+
+@media only screen and (max-width: 930px) {
+  #mapaGoogle {
+    width: 100%;
   }
 }
 
