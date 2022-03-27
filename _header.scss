@@ -10,12 +10,6 @@ header {
         height: 22vh;
     }
 
-    //Altura de los contenedores del logo y el grupo de iconos
-
-    .alturaCol{
-        height: 20vh;
-    }
-
     .contenedorLogo {
         //Estilo y animación del logo
         
@@ -67,12 +61,20 @@ header {
             }
         }
     
-        //Altura de los iconos de redes sociales, mapa, contacto y presupuestos
-
-        .alturaRedes {
-            height: 20vh;
-        }
     }
+
+}
+
+//Altura de los contenedores del logo y el grupo de iconos
+
+.alturaCol{
+    height: 20vh;
+}
+
+//Altura de los iconos de redes sociales, mapa, contacto y presupuestos
+
+.alturaRedes {
+    height: 20vh;
 }
 
 //Cambios responsive

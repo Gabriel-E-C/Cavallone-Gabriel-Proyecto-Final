@@ -11,10 +11,6 @@ header .altura {
   height: 22vh;
 }
 
-header .alturaCol {
-  height: 20vh;
-}
-
 header .contenedorLogo #logo {
   max-height: 20vh;
   min-height: 13vh;
@@ -92,7 +88,11 @@ header .contenedorRedes .grupoIconosHeader:hover {
   }
 }
 
-header .contenedorRedes .alturaRedes {
+.alturaCol {
+  height: 20vh;
+}
+
+.alturaRedes {
   height: 20vh;
 }
 
@@ -124,6 +124,12 @@ nav {
   background-color: aquamarine;
   text-align: center;
   height: 6.3vh;
+}
+
+@media only screen and (max-width: 991px) {
+  nav {
+    height: 7vh;
+  }
 }
 
 nav #barraNavegaciónSuperior {
@@ -160,12 +166,6 @@ nav #barraNavegaciónSuperior a .itemsNav1:hover {
   transition: 1.2s;
 }
 
-@media only screen and (max-width: 991px) {
-  nav {
-    height: 7vh;
-  }
-}
-
 main {
   background-image: url("imagenes/lab fondo.jpg");
   background-size: cover;
@@ -176,6 +176,12 @@ main {
 
 main .alturaMain {
   height: 50vh;
+}
+
+@media only screen and (max-width: 991px) {
+  main .alturaMain {
+    height: 70vh;
+  }
 }
 
 main .overlay {
@@ -223,12 +229,6 @@ main .overlay:hover .contenido {
   z-index: 0;
 }
 
-@media only screen and (max-width: 991px) {
-  .alturaMain {
-    height: 70vh;
-  }
-}
-
 footer {
   background-color: #104745;
   min-height: 500px;
@@ -265,6 +265,14 @@ footer #tablaH .tabla {
   #mapaGoogle {
     width: 100%;
   }
+}
+
+.colorFormulario {
+  background-color: rgba(26, 26, 250, 0.6);
+}
+
+.alturaFormulario {
+  height: 100vh;
 }
 
 * {

@@ -1,0 +1,9 @@
+@import "../colores";
+
+.colorFormulario {
+    background-color: map-get($map: $colores, $key: color3);
+}
+
+.alturaFormulario {
+    height: 100vh;
+}

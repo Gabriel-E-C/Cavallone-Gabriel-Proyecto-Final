@@ -6,12 +6,13 @@
 
 //Etilos por secciones
 
-@import "_body";
-@import "_colores";
-@import "_header";
-@import "_nav";
-@import "_main";
-@import "_footer";
+@import "body";
+@import "colores";
+@import "header";
+@import "nav";
+@import "main";
+@import "footer";
+@import "../Proyecto-0-Boot-SASS/paginasSecundarias/general";
 
 
 *{

@@ -1,4 +1,4 @@
-@import "_colores";
+@import "colores";
 
 //Estilo
 
@@ -8,6 +8,13 @@ nav {
     background-color: map-get($map: $colores, $key: color1);
     text-align: center;
     height: 6.3vh;
+
+    //Responsiveness
+
+    @media only screen and (max-width: 991px) {
+        height: 7vh;
+    }
+
     //Lista desordenada
 
     #barraNavegaciónSuperior {
@@ -39,11 +46,5 @@ nav {
                 }
             }
         }
-    }
-}
-
-@media only screen and (max-width: 991px) {
-     nav {
-         height: 7vh;
     }
 }

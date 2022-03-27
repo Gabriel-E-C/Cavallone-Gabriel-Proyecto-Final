@@ -11,6 +11,12 @@ main{
 
     .alturaMain{
         height: 50vh;
+
+        //Resposiveness
+
+        @media only screen and (max-width: 991px) {
+            height: 70vh;
+        }
     }
 
     //Elemento padre para la capa que se agrega sobre las imágenes
@@ -64,13 +70,5 @@ main{
             color: white;
             z-index: 0;
         }
-    }
-}
-
-//Resposiveness
-
-@media only screen and (max-width: 991px) {
-    .alturaMain {
-        height: 70vh;
     }
 }
