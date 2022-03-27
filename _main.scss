@@ -1,62 +1,73 @@
+//Estilos de la seccion principal de la página
+
 main{
     background-image: url("imagenes/lab\ fondo.jpg");
     background-size: cover;
     background-position: center;
     background-color: #444;
     background-blend-mode: multiply;
+
+    //Altura de la sección
+
+    .alturaMain{
+        height: 50vh;
+    }
+
+    //Elemento padre para la capa que se agrega sobre las imágenes
+
+    .overlay{
+        position: relative;
+
+            //Estilo de las imágenes cliqueables
+
+            .mainLinks {
+                height: 200px;
+                width: 200px;
+                border: outset 4px darken(aquamarine, 20%);
+            }
+
+            a {
+                //Estilos de la capa que se agrega sobre las imágenes
+            
+                .contenido {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    padding-left: 1.2rem;
+                    font-family: 'Dancing Script', cursive;
+                    background-color: map-get($map: $colores, $key: color3);
+                    color: transparent;
+                    transform: scaleX(0);
+                    transform-origin: left;
+                    transition: .5s;
+                    z-index: 1;
+                
+                    //Contenido de texto dentro de la capa agregada
+                    
+                    .tituloContenido {
+                        font-size: 2.5rem;
+                        font-weight: bold;
+                    }
+                    
+                    .textoContenido {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+        //Efectos para la vista de la capa agregada
+
+        &:hover .contenido {
+            transform: scaleX(1);
+            color: white;
+            z-index: 0;
+        }
+    }
 }
 
-.mainLinks {
-    height: 200px;
-    width: 200px;
-    border: outset 4px aquamarine;
-}
-
-.alturaMain{
-    height: 50vh;
-}
-
-.overlay{
-    position: relative;
-    // height: 250px;
-    // width: 250px;
-    // display: flex;
-    // align-items: center;
-    background-color: pink;
-    //z-index: 1;
-}
-
-.contenido {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    padding-left: 1.2rem;
-    font-family: 'Dancing Script', cursive;
-    background-color: map-get($map: $colores, $key: color3);
-    color: transparent;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: .5s;
-    z-index: 1;
-}
-
-.overlay:hover .contenido {
-    transform: scaleX(1);
-    transform-origin: right;
-    color: white;
-    z-index: 0;
-}
-
-.tituloContenido {
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-.textoContenido {
-    font-size: 1.2rem;
-}
+//Resposiveness
 
 @media only screen and (max-width: 991px) {
     .alturaMain {

@@ -7,7 +7,15 @@ header {
   height: 22vh;
 }
 
-#logo {
+header .altura {
+  height: 22vh;
+}
+
+header .alturaCol {
+  height: 20vh;
+}
+
+header .contenedorLogo #logo {
   max-height: 20vh;
   min-height: 13vh;
   -webkit-animation-name: giroLogo;
@@ -44,12 +52,12 @@ header {
   }
 }
 
-.grupoIconosHeader {
+header .contenedorRedes .grupoIconosHeader {
   height: 3.5vh;
   width: 2.5vw;
 }
 
-.grupoIconosHeader:hover {
+header .contenedorRedes .grupoIconosHeader:hover {
   -webkit-animation: latido 1s ease-in-out none infinite;
           animation: latido 1s ease-in-out none infinite;
 }
@@ -84,15 +92,7 @@ header {
   }
 }
 
-.altura {
-  height: 22vh;
-}
-
-.alturaCol {
-  height: 20vh;
-}
-
-.alturaRedes {
+header .contenedorRedes .alturaRedes {
   height: 20vh;
 }
 
@@ -105,7 +105,7 @@ header {
     height: 15vh;
   }
   .barraRedes {
-    background-color: rgba(26, 26, 250, 0.8);
+    background-color: rgba(26, 26, 250, 0.6);
   }
   .alturaRedes {
     height: 7vh;
@@ -174,22 +174,21 @@ main {
   background-blend-mode: multiply;
 }
 
-.mainLinks {
-  height: 200px;
-  width: 200px;
-  border: outset 4px aquamarine;
-}
-
-.alturaMain {
+main .alturaMain {
   height: 50vh;
 }
 
-.overlay {
+main .overlay {
   position: relative;
-  background-color: pink;
 }
 
-.contenido {
+main .overlay .mainLinks {
+  height: 200px;
+  width: 200px;
+  border: outset 4px #19ffb2;
+}
+
+main .overlay a .contenido {
   position: absolute;
   top: 0;
   left: 0;
@@ -197,7 +196,7 @@ main {
   width: 100%;
   padding-left: 1.2rem;
   font-family: 'Dancing Script', cursive;
-  background-color: rgba(26, 26, 250, 0.8);
+  background-color: rgba(26, 26, 250, 0.6);
   color: transparent;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
@@ -208,22 +207,20 @@ main {
   z-index: 1;
 }
 
-.overlay:hover .contenido {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-  -webkit-transform-origin: right;
-          transform-origin: right;
-  color: white;
-  z-index: 0;
-}
-
-.tituloContenido {
+main .overlay a .contenido .tituloContenido {
   font-size: 2.5rem;
   font-weight: bold;
 }
 
-.textoContenido {
+main .overlay a .contenido .textoContenido {
   font-size: 1.2rem;
+}
+
+main .overlay:hover .contenido {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  color: white;
+  z-index: 0;
 }
 
 @media only screen and (max-width: 991px) {
@@ -256,6 +253,7 @@ footer .itemFooter h2 {
 }
 
 footer .itemFooter p {
+  padding-left: 10px;
   background-color: #19716d;
 }
 

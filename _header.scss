@@ -3,70 +3,76 @@ header {
     background-size: cover;
     background-position: center;
     height: 22vh;
-}
 
-#logo {
-    max-height: 20vh; 
-    min-height: 13vh;
-    animation-name: giroLogo;
-    animation-iteration-count: infinite;
-    animation-delay: 7s;
-    animation-timing-function: ease-in-out;
-    animation-duration: 8s;
-}
+    //Altura del header
 
-@keyframes giroLogo {
-    10%{
-        transform: rotate3d(1,1,1,90deg);
+    .altura {
+        height: 22vh;
     }
 
-    90%{
-        transform: rotate3d(1,1,1,360deg);
-    }
-}
+    //Altura de los contenedores del logo y el grupo de iconos
 
-//Grupo de iconos de redes sociales, mapa, contacto y presupuestos
-
-.grupoIconosHeader {
-    height: 3.5vh;
-    width: 2.5vw;
-
-    &:hover {
-        animation: latido 1s ease-in-out none infinite;
+    .alturaCol{
+        height: 20vh;
     }
 
-    @keyframes latido {
-        0%
-        {
-          transform: scale( 1 );    
+    .contenedorLogo {
+        //Estilo y animación del logo
+        
+        #logo {
+            max-height: 20vh; 
+            min-height: 13vh;
+            animation-name: giroLogo;
+            animation-iteration-count: infinite;
+            animation-delay: 7s;
+            animation-timing-function: ease-in-out;
+            animation-duration: 8s;
         }
-        20%
-        {
-          transform: scale( 1.25 );  
-        }
-         40%
-        {
-          transform: scale( 1.5 );
+        
+        @keyframes giroLogo {
+            10%{
+                transform: rotate3d(1,1,1,90deg);
+            }
+        
+            90%{
+                transform: rotate3d(1,1,1,360deg);
+            }
         }
     }
-}
 
-//Altura del header
+    .contenedorRedes{
+        //Grupo de iconos de redes sociales, mapa, contacto y presupuestos
 
-.altura {
-    height: 22vh;
-}
+        .grupoIconosHeader {
+            height: 3.5vh;
+            width: 2.5vw;
 
-//Altura de los contenedores del logo y el grupo de iconos
+            &:hover {
+                animation: latido 1s ease-in-out none infinite;
+            }
 
-.alturaCol{
-    height: 20vh;
-}
+            @keyframes latido {
+                0%
+                {
+                transform: scale( 1 );    
+                }
+                20%
+                {
+                transform: scale( 1.25 );  
+                }
+                40%
+                {
+                transform: scale( 1.5 );
+                }
+            }
+        }
+    
+        //Altura de los iconos de redes sociales, mapa, contacto y presupuestos
 
-//Altura de los iconos de redes sociales, mapa, contacto y presupuestos
-
-.alturaRedes {
-    height: 20vh;
+        .alturaRedes {
+            height: 20vh;
+        }
+    }
 }
 
 //Cambios responsive
