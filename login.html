@@ -88,11 +88,33 @@
 
     <main class="container-fluid fondo alturaFormulario">
         <div class="container alturaMain">
-            <div class="row justify-content-around">
+            <div class="row">
                 <div class="col-1 col-sm-1 col-md-2 col-lg-3"></div>
                 <!-- Contenedor del formulario -->
                 <div class="col-10 col-sm-10 col-md-8 col-lg-6 alturaFormulario colorFormulario">
-
+                    <div id="logInTitulo" class="tituloFormulario">
+                        <h1>Log In</h1>
+                    </div>
+                    <div class="contenidoFormulario">
+                        <form action="#" method="post" enctype="application/x-www-form-urlencoded">
+                            <label class="" for="usuario">Usuario:</label>
+                            <br>
+                            <input type="text" name="usuario" required>
+                            <br>
+                            <br>
+                            <label class="logInLabel formularioLabels" for="pass">Password:</label>
+                            <br>
+                            <input type="password" name="password" required>
+                            <br>
+                            <br>
+                            <div class="botonesFormulario">
+                                <input type="submit" value="  Enviar  ">
+                                <input type="reset" value="  Blanquear  ">
+                            </div>
+                        </form>
+                    </div>
+                    <br>
+                    <div class="olvido"><a href="olvidoPassword.html"> ¿Olvidaste tu password? </a></div>
                 </div>
                 
                 <div class="col-1 col-sm-1 col-md-2 col-lg-3"></div>

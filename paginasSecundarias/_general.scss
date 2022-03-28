@@ -7,3 +7,31 @@
 .alturaFormulario {
     height: 100vh;
 }
+
+.tituloFormulario {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.contenidoFormulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    color: whitesmoke;
+    height: 5vh;
+}
+
+input {
+    border-radius: 8px;
+}
+
+.botonesFormulario {
+    display: flex;
+    justify-content: space-around;
+}

@@ -208,8 +208,8 @@ main .overlay a .contenido {
           transform: scaleX(0);
   -webkit-transform-origin: left;
           transform-origin: left;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: .35s;
+  transition: .35s;
   z-index: 1;
 }
 
@@ -273,6 +273,58 @@ footer #tablaH .tabla {
 
 .alturaFormulario {
   height: 100vh;
+}
+
+.tituloFormulario {
+  height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: whitesmoke;
+}
+
+.contenidoFormulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+label {
+  color: whitesmoke;
+  height: 5vh;
+}
+
+input {
+  border-radius: 8px;
+}
+
+.botonesFormulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.olvido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 * {
