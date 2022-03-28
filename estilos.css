@@ -267,6 +267,11 @@ footer #tablaH .tabla {
   }
 }
 
+form {
+  margin-left: 10%;
+  width: 90%;
+}
+
 .colorFormulario {
   background-color: rgba(26, 26, 250, 0.6);
 }
@@ -310,6 +315,10 @@ input {
   border-radius: 8px;
 }
 
+.anchoCampo {
+  width: 90%;
+}
+
 .botonesFormulario {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -325,6 +334,10 @@ input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.alturaTurnos {
+  height: 110vh;
 }
 
 * {

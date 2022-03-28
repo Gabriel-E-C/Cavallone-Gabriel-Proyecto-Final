@@ -1,5 +1,10 @@
 @import "../colores";
 
+form {
+    margin-left: 10%;
+    width: 90%;
+}
+
 .colorFormulario {
     background-color: map-get($map: $colores, $key: color3);
 }
@@ -29,6 +34,10 @@ label {
 
 input {
     border-radius: 8px;
+}
+
+.anchoCampo{
+    width: 90%;
 }
 
 .botonesFormulario {

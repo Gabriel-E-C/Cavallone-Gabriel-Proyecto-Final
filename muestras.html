@@ -88,11 +88,53 @@
 
     <main class="container-fluid fondo alturaFormulario">
         <div class="container alturaMain">
-            <div class="row justify-content-around">
+            <div class="row">
                 <div class="col-1 col-sm-1 col-md-2 col-lg-3"></div>
                 <!-- Contenedor del formulario -->
                 <div class="col-10 col-sm-10 col-md-8 col-lg-6 alturaFormulario colorFormulario">
-
+                    <div id="muestraTitulo" class="tituloFormulario">
+                        <h1>Indicaciones para el paciente</h1>
+                    </div>
+                    <div class="contenidoFormulario">
+                    <form id="muestraFormulario" class="formularioGeneral" action="#" method="post" enctype="application/x-www-form-urlencoded">
+                        <label class="muestraLabel formularioLabels" for="nombre">Nombre:</label>
+                        <br>
+                        <input class="anchoCampo" type="text" name="nombre" required>
+                        <br>
+                        <br>
+                        <label class="muestraLabel formularioLabels" for="apellido">Apellido:</label>
+                        <br>
+                        <input class="anchoCampo" type="text" name="apellido" required>
+                        <br>
+                        <br>
+                        <label class="muestraLabel formularioLabels" for="email">Introduce tu e-mail:</label>
+                        <br>
+                        <input class="anchoCampo" type="email" name="email" placeholder="Debe contener una @" required>
+                        <br>
+                        <br>
+                        <label class="muestraLabel formularioLabels estudiosLabels" for="estudio1">Por favor, indíquenos el o los estudios que se realizará:</label>
+                        <div id="checkFormPadre">
+                            <div id="checkForm" class="checkForm">
+                                <input type="checkbox" name="estudio1">
+                                <label class="" for="estudio1"> Estudio1 </label>
+                                <br>
+                                <input type="checkbox"      name="estudio2">
+                                <label class="" for="estudio2"> Estudio2 </label>
+                                <br>
+                                <input type="checkbox"      name="estudio3">
+                                <label class="" for="estudio3"> Estudio3 </label>
+                                <br>
+                                <input type="checkbox"      name="estudio4">
+                                <label class="" for="estudio4"> Estudio4 </label>
+                                <br>
+                            </div>
+                        </div>        
+                        <br>
+                        <div class="botonesFormulario">
+                            <input type="submit" value="  Enviar  ">
+                            <input type="reset" value="  Blanquear  ">
+                        </div>
+                    </form>
                 </div>
                 
                 <div class="col-1 col-sm-1 col-md-2 col-lg-3"></div>
