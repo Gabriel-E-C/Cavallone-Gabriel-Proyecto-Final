@@ -34,6 +34,7 @@ label {
 
 input {
     border-radius: 8px;
+    min-width: 8vw;
 }
 
 .anchoCampo{
@@ -43,4 +44,9 @@ input {
 .botonesFormulario {
     display: flex;
     justify-content: space-around;
+}
+
+textarea {
+    resize: none;
+    max-width: 90%;
 }

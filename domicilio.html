@@ -86,13 +86,49 @@
         </ul>
     </nav>
 
-    <main class="container-fluid fondo alturaFormulario">
-        <div class="container alturaMain">
-            <div class="row justify-content-around">
+    <main class="container-fluid fondo alturaDomicilio">
+        <div class="container alturaDomicilio">
+            <div class="row">
                 <div class="col-1 col-sm-1 col-md-2 col-lg-3"></div>
                 <!-- Contenedor del formulario -->
-                <div class="col-10 col-sm-10 col-md-8 col-lg-6 alturaFormulario colorFormulario">
-
+                <div class="col-10 col-sm-10 col-md-8 col-lg-6 alturaDomicilio colorFormulario">
+                    <div id="domicilioTitulo" class="tituloFormulario">
+                        <h1>Domicilio</h1>
+                    </div>
+                    <div class="contenidoFormulario">
+                        <form id="domicilioFormulario" action="#" method="post" enctype="application/x-www-form-urlencoded">
+                            <label class="domicilioLabel formularioLabels" for="nombre">Nombre:</label>
+                            <br>
+                            <input class="anchoCampo" type="text" name="nombre" required>
+                            <br>
+                            <br>
+                            <label class="domicilioLabel formularioLabels" for="apellido">Apellido:</label>
+                            <br>
+                            <input class="anchoCampo" type="text" name="apellido" required>
+                            <br>
+                            <br>
+                            <label class="domicilioLabel formularioLabels" for="email">Introduce tu e-mail:</label>
+                            <br>
+                            <input class="anchoCampo" type="email" name="email" placeholder="Debe contener una @" required>
+                            <br>
+                            <br>
+                            <label class="domicilioLabel formularioLabels estudiosLabels" for="email">Por favor, indíquenos el o los estudios a realizar:</label>
+                            <br>
+                            <textarea name="contenido" id="" cols="55" rows="10"></textarea>
+                            <br>
+                            <br>
+                            <label class="domicilioLabel formularioLabels" for="fecha">Elija la fecha y hora:</label>
+                            <br>
+                            <input type="datetime-local" name="fecha">
+                            <br>
+                            <br>
+                            <br>
+                            <div class="botonesFormulario">
+                                <input type="submit" value="Enviar">
+                                <input type="reset" value="Blanquear">
+                            </div>
+                        </form>
+                    </div>
                 </div>
                 
                 <div class="col-1 col-sm-1 col-md-2 col-lg-3"></div>

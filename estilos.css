@@ -313,6 +313,7 @@ label {
 
 input {
   border-radius: 8px;
+  min-width: 8vw;
 }
 
 .anchoCampo {
@@ -327,6 +328,11 @@ input {
       justify-content: space-around;
 }
 
+textarea {
+  resize: none;
+  max-width: 90%;
+}
+
 .olvido {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -338,6 +344,14 @@ input {
 
 .alturaTurnos {
   height: 110vh;
+}
+
+.alturaDomicilio {
+  height: 130vh;
+}
+
+.alturaContacto {
+  height: 117vh;
 }
 
 * {
